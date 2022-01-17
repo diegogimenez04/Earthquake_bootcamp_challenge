@@ -3,4 +3,5 @@
     <string name="no_earthquakes_right_now">No earthquakes right now</string>
     <string name="longitude">Longitude</string>
     <string name="latitude">Latitude</string>
+    <string name="splash">Splash</string>
 </resources>
