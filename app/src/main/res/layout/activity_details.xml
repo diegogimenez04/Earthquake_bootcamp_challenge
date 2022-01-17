@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/eq_detail_magnitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/blue"
+            android:textSize="72sp"
+            tools:text="4.50" />
+
+        <TextView
+            android:id="@+id/eq_detail_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/eq_detail_magnitude"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/eq_detail_magnitude"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:text="Richter" />
+
+        <ImageView
+            android:id="@+id/location_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/eq_detail_magnitude"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_baseline_location_on_24"/>
+
+        <TextView
+            android:id="@+id/longitude_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eq_detail_magnitude"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@+id/location_icon"
+            android:textColor="@color/standard"
+            android:text="@string/longitude"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/latitude_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/longitude_text"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/standard"
+            android:layout_toEndOf="@+id/location_icon"
+            android:text="@string/latitude"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/eq_detail_longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eq_detail_magnitude"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@+id/longitude_text"
+            android:textColor="@color/coordinates"
+            android:layout_alignParentEnd="true"
+            tools:text="57.548"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/eq_detail_latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/longitude_text"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/coordinates"
+            android:layout_toEndOf="@+id/longitude_text"
+            android:layout_alignParentEnd="true"
+            tools:text="20.45784"
+            android:textSize="16sp"/>
+
+        <View
+            android:id="@+id/divisor_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/location_icon"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/divisor_line" />
+
+        <ImageView
+            android:id="@+id/warning_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divisor_line_1"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_warning_24"/>
+
+        <TextView
+            android:id="@+id/eq_detail_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divisor_line_1"
+            android:layout_alignTop="@+id/warning_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@+id/warning_icon"
+            android:textColor="@color/standard"
+            android:textSize="16sp"
+            tools:text="6 Km N of Foliates, Greece" />
+
+        <View
+            android:id="@+id/divisor_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/warning_icon"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/divisor_line" />
+
+        <ImageView
+            android:id="@+id/time_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divisor_line_2"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_access_time_24"/>
+
+        <TextView
+            android:id="@+id/eq_detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/time_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@+id/time_icon"
+            android:textColor="@color/standard"
+            android:textSize="16sp"
+            tools:text="28/ago./2020 19:18:28" />
+
+
+    </RelativeLayout>
+</layout>
