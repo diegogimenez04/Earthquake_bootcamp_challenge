@@ -4,4 +4,7 @@
     <string name="longitude">Longitude</string>
     <string name="latitude">Latitude</string>
     <string name="splash">Splash</string>
+    <string name="sort_by_magnitude">Sort by magnitude</string>
+    <string name="sort_by_time">Sort by time</string>
+    <string name="richter">Richter</string>
 </resources>

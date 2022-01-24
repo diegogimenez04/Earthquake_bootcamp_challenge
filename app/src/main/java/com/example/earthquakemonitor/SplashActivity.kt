@@ -26,18 +26,16 @@ class SplashActivity : AppCompatActivity() {
 
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
-            finish() // Agregar finish para que al volver atras se cierre la app
+            finish()
         }, SPLASH_DURATION)
 
     }
 
     private fun displayAppVersion() {
         try {
-            // Obtiene el numero de version y lo carga el textview de abajo a la derecha
             val version = this.packageManager.getPackageInfo(this.packageName, 0).versionName
             binding.tvVersioname.text = version
         } catch (e: PackageManager.NameNotFoundException) {
-            // Log por si falla
             e.printStackTrace()
         }
     }

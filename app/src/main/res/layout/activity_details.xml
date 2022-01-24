@@ -33,7 +33,7 @@
             android:layout_toEndOf="@id/eq_detail_magnitude"
             android:textColor="@color/black"
             android:textSize="24sp"
-            tools:text="Richter" />
+            android:text="@string/richter" />
 
         <ImageView
             android:id="@+id/location_icon"
@@ -112,7 +112,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
             android:layout_alignParentStart="true"
-            android:src="@drawable/ic_baseline_warning_24"/>
+            android:src="@drawable/ic_baseline_warning_black_24"/>
 
         <TextView
             android:id="@+id/eq_detail_place"
@@ -147,7 +147,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
             android:layout_alignParentStart="true"
-            android:src="@drawable/ic_baseline_access_time_24"/>
+            android:src="@drawable/ic_baseline_access_time_black_24"/>
 
         <TextView
             android:id="@+id/eq_detail_time"

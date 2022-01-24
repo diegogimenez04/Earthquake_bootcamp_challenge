@@ -36,8 +36,11 @@ class DetailsActivity : AppCompatActivity() {
             longitude = bundle.getDouble(EARTHQUAKE_LON)
             place = bundle.getString(EARTHQUAKE_LOC).toString()
             time = bundle.getLong(EARTHQUAKE_TIME)
-        } else
+        } else {
             Toast.makeText(this, "Error while fetching data", Toast.LENGTH_LONG).show()
+            finish()
+            return
+        }
 
         val simpleDateFormat = SimpleDateFormat("dd/MMM/yyyy HH:mm:ss", Locale.getDefault())
         val date = Date(time)
